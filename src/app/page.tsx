@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SITE_CONFIG, DOWNLOAD_LINKS, EXTERNAL_LINKS } from "./constants";
 
 export default function Home() {
   return (
@@ -11,37 +12,26 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="mb-8 animate-float">
               <Image
-                src="/1024.png"
-                alt="Noah Logo"
-                width={180}
-                height={180}
+                src={SITE_CONFIG.logo.src}
+                alt={SITE_CONFIG.logo.alt}
+                width={SITE_CONFIG.logo.width}
+                height={SITE_CONFIG.logo.height}
                 priority
                 className="drop-shadow-2xl"
               />
             </div>
 
             <h1 className="mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-6xl font-bold tracking-tight text-transparent md:text-7xl">
-              Noah
+              {SITE_CONFIG.name}
             </h1>
 
             <p className="mb-6 text-xl text-blue-200 md:text-2xl">
-              Your Gateway to Bitcoin's Ark Protocol
+              {SITE_CONFIG.tagline}
             </p>
 
             <div className="mb-12 max-w-2xl space-y-4 text-lg leading-relaxed text-slate-300">
-              <p>
-                Noah is a Lightning wallet built on{" "}
-                <span className="font-semibold text-blue-300">Ark</span>, a
-                second-layer protocol for Bitcoin that enables instant,
-                low-cost, and private transactions.
-              </p>
-              <p>
-                Ark provides a trustless mixing service with unilateral exit
-                capabilities, allowing users to send and receive bitcoin
-                instantly without the complexity of managing Lightning channels.
-                Experience the future of Bitcoin scaling with self-custodial
-                simplicity.
-              </p>
+              <p>{SITE_CONFIG.description.short}</p>
+              <p>{SITE_CONFIG.description.long}</p>
             </div>
 
             <div className="mb-12 w-full max-w-3xl">
@@ -51,7 +41,7 @@ export default function Home() {
 
               <div className="grid gap-4 md:grid-cols-3">
                 <a
-                  href="#"
+                  href={DOWNLOAD_LINKS.testflight.url}
                   className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-600/20 p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:from-blue-500/30 hover:to-blue-600/30 border border-blue-400/20 hover:border-blue-400/40"
                 >
                   <div className="flex flex-col items-center gap-4">
@@ -65,14 +55,18 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-white">TestFlight</p>
-                      <p className="text-sm text-slate-400">iOS Beta</p>
+                      <p className="font-semibold text-white">
+                        {DOWNLOAD_LINKS.testflight.label}
+                      </p>
+                      <p className="text-sm text-slate-400">
+                        {DOWNLOAD_LINKS.testflight.subtitle}
+                      </p>
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="#"
+                  href={DOWNLOAD_LINKS.playstore.url}
                   className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-500/20 to-green-600/20 p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:from-green-500/30 hover:to-green-600/30 border border-green-400/20 hover:border-green-400/40"
                 >
                   <div className="flex flex-col items-center gap-4">
@@ -86,14 +80,18 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-white">Play Store</p>
-                      <p className="text-sm text-slate-400">Android Beta</p>
+                      <p className="font-semibold text-white">
+                        {DOWNLOAD_LINKS.playstore.label}
+                      </p>
+                      <p className="text-sm text-slate-400">
+                        {DOWNLOAD_LINKS.playstore.subtitle}
+                      </p>
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="#"
+                  href={DOWNLOAD_LINKS.apk.url}
                   className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-600/20 p-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:from-purple-500/30 hover:to-purple-600/30 border border-purple-400/20 hover:border-purple-400/40"
                 >
                   <div className="flex flex-col items-center gap-4">
@@ -113,8 +111,12 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-white">Direct APK</p>
-                      <p className="text-sm text-slate-400">Android Package</p>
+                      <p className="font-semibold text-white">
+                        {DOWNLOAD_LINKS.apk.label}
+                      </p>
+                      <p className="text-sm text-slate-400">
+                        {DOWNLOAD_LINKS.apk.subtitle}
+                      </p>
                     </div>
                   </div>
                 </a>
@@ -123,7 +125,7 @@ export default function Home() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com/BlixtWallet/noah"
+                href={EXTERNAL_LINKS.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 rounded-full bg-slate-800/50 px-6 py-3 backdrop-blur-sm transition-all duration-300 hover:bg-slate-800/70 border border-slate-700/50 hover:border-slate-600"
