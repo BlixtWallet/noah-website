@@ -3,8 +3,8 @@ export const SITE_CONFIG = {
   tagline: "Your Gateway to Bitcoin's Ark Protocol",
   description: {
     short:
-      "Noah is a Lightning wallet built on Ark, a second-layer protocol for Bitcoin that enables instant, low-cost, and private transactions.",
-    long: "Ark provides a trustless mixing service with unilateral exit capabilities, allowing users to send and receive bitcoin instantly without the complexity of managing Lightning channels. Experience the future of Bitcoin scaling with self-custodial simplicity.",
+      "Noah is a Lightning wallet built on Ark, a second-layer protocol for Bitcoin that enables instant and low-cost transactions.",
+    long: "The Ark protocol is a second layer on the bitcoin network. It offers: simple onboarding, low and predictable fees, instant payments, Lightning interoperability, and full control over your bitcoin.",
   },
   logo: {
     src: "/1024.png",
