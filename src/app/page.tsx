@@ -49,7 +49,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
+                <h1 className="text-4xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
                   {SITE_CONFIG.tagline}
                 </h1>
                 <p className="text-xl text-slate-400 leading-relaxed">
