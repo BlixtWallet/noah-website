@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
     long: "The Ark protocol is a second layer on the bitcoin network. It offers: simple onboarding, low and predictable fees, instant payments, Lightning interoperability, and full control over your bitcoin.",
   },
   logo: {
-    src: "/1024.png",
+    src: "/1024_no_background.png",
     alt: "Noah Logo",
     width: 180,
     height: 180,
