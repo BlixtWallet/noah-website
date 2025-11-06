@@ -28,13 +28,19 @@ body {
 @keyframes float {
     0%,
     100% {
-        transform: translateY(0px);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25% {
+        transform: translate(8px, -10px) rotate(2deg);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translate(0px, -18px) rotate(0deg);
+    }
+    75% {
+        transform: translate(-8px, -10px) rotate(-2deg);
     }
 }
 
 .animate-float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
 }
