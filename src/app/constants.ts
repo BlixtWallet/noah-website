@@ -16,7 +16,7 @@ export const SITE_CONFIG = {
 
 export const DOWNLOAD_LINKS = {
   testflight: {
-    url: "#",
+    url: "https://testflight.apple.com/join/E4P44dXF",
     label: "TestFlight",
     subtitle: "iOS Beta",
     color: "blue",
