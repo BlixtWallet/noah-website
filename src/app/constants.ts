@@ -22,7 +22,7 @@ export const DOWNLOAD_LINKS = {
     color: "blue",
   },
   playstore: {
-    url: "#",
+    url: "https://play.google.com/store/apps/details?id=com.noahwallet.signet",
     label: "Play Store",
     subtitle: "Android Beta",
     color: "green",
