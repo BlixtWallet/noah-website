@@ -68,6 +68,20 @@ export default function Home() {
                 </div>
                 <p className="text-slate-400">Available on iOS & Android</p>
               </div>
+
+              <a
+                href="https://second.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block cursor-pointer"
+              >
+                <Image
+                  src="/second-badge-black.svg"
+                  alt="Powered by Second"
+                  width={168}
+                  height={32}
+                />
+              </a>
             </div>
 
             <div className="relative">
