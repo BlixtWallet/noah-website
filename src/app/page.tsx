@@ -60,11 +60,31 @@ export default function Home() {
                 </p>
               </div>
 
+              {/* Platform availability indicator with iOS and Android logos */}
               <div className="flex items-center gap-2 text-sm">
                 <div className="flex -space-x-2">
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 ring-2 ring-black" />
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 ring-2 ring-black" />
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 ring-2 ring-black" />
+                  {/* iOS logo - sized at 14x18px (smaller than Android) to achieve visual balance
+                      since the Apple logo has more vertical presence */}
+                  <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 ring-2 ring-black flex items-center justify-center">
+                    <Image
+                      src="/apple-logo-white.svg"
+                      alt="iOS"
+                      width={14}
+                      height={18}
+                      className="object-contain -mt-0.5"
+                    />
+                  </div>
+                  {/* Android logo - sized at 18x11px (larger than iOS) to achieve visual balance
+                      since the Android head is horizontally oriented and needs more width */}
+                  <div className="h-8 w-8 rounded-full bg-gradient-to-br from-green-500 to-green-600 ring-2 ring-black flex items-center justify-center">
+                    <Image
+                      src="/android-head-white.svg"
+                      alt="Android"
+                      width={18}
+                      height={11}
+                      className="object-contain -mt-0.5"
+                    />
+                  </div>
                 </div>
                 <p className="text-slate-400">Available on iOS & Android</p>
               </div>
