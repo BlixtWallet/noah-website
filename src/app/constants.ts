@@ -28,7 +28,7 @@ export const DOWNLOAD_LINKS = {
     color: "green",
   },
   apk: {
-    url: "https://github.com/BlixtWallet/noah/releases/download/v0.0.8.signet/noah-android-apk-2026-03-09-16-59.apk",
+    url: "https://github.com/BlixtWallet/noah/releases/latest/download/noah.apk",
     label: "Direct APK",
     subtitle: "Android Package",
     color: "purple",
