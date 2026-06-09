@@ -16,19 +16,19 @@ export const SITE_CONFIG = {
 
 export const DOWNLOAD_LINKS = {
   testflight: {
-    url: "https://testflight.apple.com/join/E4P44dXF",
+    url: "https://testflight.apple.com/join/YQW6fu9w",
     label: "TestFlight",
     subtitle: "iOS Beta",
     color: "blue",
   },
   playstore: {
-    url: "https://play.google.com/store/apps/details?id=com.noahwallet.signet",
+    url: "https://play.google.com/store/apps/details?id=com.noahwallet.mainnet",
     label: "Play Store",
     subtitle: "Android Beta",
     color: "green",
   },
   apk: {
-    url: "https://github.com/BlixtWallet/noah/releases/latest/download/noah.apk",
+    url: "https://github.com/BlixtWallet/noah/releases/latest/download/noah-mainnet.apk",
     label: "Direct APK",
     subtitle: "Android Package",
     color: "purple",
